@@ -1,0 +1,12 @@
+{
+    "LandingPageLocators":{
+        "name":"#name",
+        "email":"#email",
+        "message":"#message",
+        "emailContact":"#emailContact",
+        "button":"button"
+    }
+
+
+
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: #1abc9c;
+            color: white;
+            border-radius: 8px;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        #about, #contact {
+            text-align: left;
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #about h2, #contact h2 {
+            text-align: left;
+            margin-left: 0;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 1em;
+            font-family: 'Poppins', sans-serif;
+            display: block;
+            border: 1px solid #2c3e50;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background: #2c3e50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            transition: 0.3s;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        .contact-form button:hover {
+            background: #1abc9c;
+        }
+
+        .contact-form label {
+            margin-bottom: 5px;
+            text-align: left;
+            display: block;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .contact-form input[type="radio"], .contact-form input[type="checkbox"] {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        .contact-form select, .contact-form input[type="radio"], .contact-form input[type="checkbox"] {
+            border: none;
+            background-color: transparent;
+            font-family: 'Poppins', sans-serif;
+            margin: 5px 0;
+        }
+
+        .contact-form select {
+            border: 1px solid #2c3e50;
+            background-color: white;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        .contact-form section {
+            text-align: left;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .contact-form .radio-group, .contact-form .checkbox-group {
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 15px;
+        }
+
+        .contact-form .radio-group div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-form .radio-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form .radio-group input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .contact-form .radio-group div:first-child {
+            margin-top: 10px;
+        }
+
+        .contact-form .subject-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-form .subject-section label {
+            margin-right: 5px;
+            width: auto;
+            text-align: left;
+        }
+
+        .contact-form .subject-section select {
+            border: 1px solid #2c3e50;
+            background-color: white;
+            padding: 8px;
+            border-radius: 4px;
+            flex-shrink: 1;
+            width: auto;
+        }
+
+        .contact-info-note {
+            margin-top: 30px;
+            font-size: 1em;
+            font-style: italic;
+            color: #555;
+            text-align: left;
+        }
+
+        .contact-info-note a {
+            text-decoration: none;
+            color: #1abc9c;
+            font-weight: bold;
+        }
+
+        .contact-info-note a:hover {
+            color: #2c3e50;
+        }
+
+        .contact-info-note i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Abhishek Arora's Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero" id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Professional Automation Engineer | QA Expert | Problem Solver</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a results-driven Test Automation Engineer with extensive expertise in developing scalable and efficient automation solutions using Selenium, API Testing, and the Cucumber framework. Passionate about optimizing testing workflows, I ensure the highest standards of quality in every line of code. With a meticulous eye for detail and a relentless focus on excellence, I strive to drive continuous improvements in the software development lifecycle, delivering seamless, error-free user experiences. My commitment to precision and innovation helps teams achieve faster, more reliable releases, contributing to the overall success of the organization.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form" id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+
+                <section class="subject-section">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" required>
+                        <option value="qa">QA Inquiry</option>
+                        <option value="automation">Automation Query</option>
+                        <option value="other">Other</option>
+                    </select>
+                </section>
+
+                <section class="radio-group">
+                    <label for="preferredContactMethod">Preferred Contact Method:</label>
+                    <div>
+                        <input type="radio" id="emailContact" name="contactMethod" value="email" required>
+                        <label for="emailContact">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="phoneContact" name="contactMethod" value="phone">
+                        <label for="phoneContact">Phone</label>
+                    </div>
+                </section>
+
+                <section class="checkbox-group">
+                    <label for="newsletter">Subscribe to Newsletter:</label>
+                    <div>
+                        <input type="checkbox" id="newsletter" name="newsletter" style="margin-left: 5px;">
+                    </div>
+                </section>
+
+                <button type="submit">Send</button>
+            </form>
+
+            <div class="contact-info-note">
+                <p><strong>Note:</strong> Please contact me at <a href="mailto:aviarora090@gmail.com"><i>📧</i> aviarora090@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/abhishek-arora9" target="_blank"><i>🔗</i> LinkedIn</a>.</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+            let subject = document.getElementById("subject").value;
+            let contactMethod = document.querySelector('input[name="contactMethod"]:checked') ? document.querySelector('input[name="contactMethod"]:checked').value : "Not specified";
+            let newsletter = document.getElementById("newsletter").checked ? "Yes" : "No";
+
+            if(name === "" || email === "" || message === "" || subject === "") {
+                alert("Please fill out all fields before submitting.");
+                return;
+            }
+
+            alert("Thank you, " + name + "! Your message has been sent successfully. \nContact Method: " + contactMethod + "\nSubscribed to Newsletter: " + newsletter);
+
+            document.getElementById("contactForm").reset();
+        });
+    </script>
+
+</body>
+</html>

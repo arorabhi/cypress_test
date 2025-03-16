@@ -9,9 +9,10 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "private":true,
+  "private": true,
   "devDependencies": {
     "cypress": "^14.2.0",
+    "cypress-iframe": "^1.0.1",
     "prettier": "^3.5.3"
   }
 }
