@@ -46,7 +46,7 @@ I've also integrated **GitHub Actions** to run tests automatically, making the p
 ## 💻 **How to Run the Tests Locally**  
 
 ### 1️⃣ Clone this repository:
-git clone https://github.com/arorabhi/cypress_test.git
+git clone https://github.com/arorabhi/cypress_test.git  
 cd cypress_test
 
 ### 2️⃣ Install Dependencies:
